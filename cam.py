@@ -10,7 +10,7 @@ body_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_fullbo
 detection = False
 detection_stopped_time = None
 timer_started = False
-SECONDS_TO_RECORD_AFTER_DETECTION = 5
+SEC = 5
 
 frame_size = (int(cap.get(3)), int(cap.get(4)))
 fourcc = cv2.VideoWriter_fourcc("m", "p", "4", "v")
@@ -35,7 +35,7 @@ while True:
             print("Started Recording!")
     elif detection:
         if timer_started:
-            if time.time() - detection_stopped_time >= SECONDS_TO_RECORD_AFTER_DETECTION:
+            if time.time() - detection_stopped_time >= SEC:
                 detection = False
                 timer_started = False
                 out.release()
@@ -60,6 +60,7 @@ while True:
 out.release()
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
