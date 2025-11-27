@@ -2,7 +2,7 @@
 
 This project implements a real-time face and full body detection system using OpenCV. When it detects a face or body via webcam input, it starts recording video footage automatically and saves it with timestamped filenames.
 
-# Project Made by Rohan Bhambare
+# Mini - Project Made by Rohan Bhambare
 
 ## Features
 
@@ -32,4 +32,4 @@ This project implements a real-time face and full body detection system using Op
 
 ## Configuration
 
-- The delay before stopping recording after detection ends is set to 5 seconds by default and can be adjusted by changing the `SECONDS_TO_RECORD_AFTER_DETECTION` variable in the script.
+- The delay before stopping recording after detection ends is set to 5 seconds by default and can be adjusted by changing the `SEC` variable in the script.
