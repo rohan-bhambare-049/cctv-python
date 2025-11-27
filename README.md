@@ -2,6 +2,8 @@
 
 This project implements a real-time face and full body detection system using OpenCV. When it detects a face or body via webcam input, it starts recording video footage automatically and saves it with timestamped filenames.
 
+# Project Made by Rohan Bhambare
+
 ## Features
 
 - Real-time face and full body detection using Haar cascades
